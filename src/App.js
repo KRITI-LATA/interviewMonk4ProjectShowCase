@@ -33,7 +33,7 @@ class App extends Component {
   }
 
   getProjectData = async () => {
-    this.setState({apiStatus: apiProjectConstant.initial})
+    this.setState({apiStatus: apiProjectConstant.in_progress})
     const {selectTag} = this.state
 
     const url = `https://apis.ccbp.in/ps/projects?category=${selectTag}`
